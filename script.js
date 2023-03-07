@@ -33,10 +33,10 @@ function colorDiv() {
       this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     }
     if (color == "erase") {
-      this.style.backgroundColor = "white";
+      this.style.backgroundColor = "black";
     }
   } else {
-    this.style.backgroundColor = "black";
+    this.style.backgroundColor = "white";
   }
 }
 function setColor(colorChoice) {
@@ -46,7 +46,7 @@ function setColor(colorChoice) {
 //Reset button
 function reset() {
   let divs = document.querySelectorAll("div");
-  divs.forEach((div) => (div.style.backgroundColor = "white"));
+  divs.forEach((div) => (div.style.backgroundColor = "black"));
 }
 
 // displaying slider
