@@ -19,12 +19,24 @@
 
     <div class="container"></div>
     <div class="buttons">
-      <button class="btn btn-primary" onclick="reset('white')">Reset</button>
-      <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+      <button class="btn btn-primary" onclick="reset('white')">RESET</button>
+      <button class="btn btn-dark" onclick="setColor('black')">BLACK</button>
       <button class="btn btn-light" onclick="setColor('random')">
-        Rainbow
+        RAINBOW
       </button>
-      <button class="btn btn-danger">Eraser</button>
+      <button class="btn btn-danger" onclick="setColor('erase')">ERASER</button>
+    </div>
+    <div class="slidecontainer">
+      <div class="rangeValue"></div>
+
+      <input
+        type="range"
+        min="1"
+        max="32"
+        value="50"
+        class="slider"
+        id="myRange"
+      />
     </div>
 
     <script src="script.js"></script>
